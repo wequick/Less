@@ -340,6 +340,7 @@ NSString *const PBViewHrefParamsKey = @"hrefParams";
         }
         
         [self pb_mapData:nil];
+        [(id)self reloadData];
     } else if ([self respondsToSelector:@selector(reloadData)]) {
         [(id)self reloadData];
     }
