@@ -1029,7 +1029,7 @@ static const CGFloat kUITableViewRowAnimationDuration = .25f;
         // Dequeue reusable cell
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:item.id forIndexPath:indexPath];
     } else {
-        cell = [item createView];
+        cell = (UICollectionViewCell *)[item createView];
     }
     
     // Auto size
